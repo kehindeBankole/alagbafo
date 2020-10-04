@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    height: 75vh;
+    background-color: brown;
+    padding: 16px;
+}
+header nav{
+    display: grid;
+    grid-template-columns:auto 100px;
+}
+header nav .nav-content #navlink{
+    display: none;
+}
+@media(min-width:992px){
+    header nav{
+        grid-template-columns:auto 400px;
+    }
+    header nav .nav-content #navlink{
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(100px , 1fr));
+    }
+    header nav .nav-content button{
+        display: none;
+    }
+
+}
