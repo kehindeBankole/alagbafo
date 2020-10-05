@@ -1,29 +1,90 @@
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-header{
-    height: 75vh;
-    background-color: brown;
-    padding: 16px;
+body{
+    font-family: 'Roboto', sans-serif;
 }
-header nav{
-    display: grid;
-    grid-template-columns:auto 100px;
+header {
+  height: 75vh;
+  background-color: brown;
+  background:url('./images/pexels-ekaterina-belinskaya-4700613.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(112, 83, 83);
+  background-blend-mode: overlay;
+  position: relative;
 }
-header nav .nav-content #navlink{
-    display: none;
+header nav {
+  display: grid;
+  grid-template-columns: auto 100px;
+  background-color: #F0135B !important;
+  z-index:999;
+  padding: 1.5rem;
 }
-@media(min-width:992px){
-    header nav{
-        grid-template-columns:auto 400px;
-    }
-    header nav .nav-content #navlink{
-        display: grid;
-        grid-template-columns: repeat(auto-fit , minmax(100px , 1fr));
-    }
-    header nav .nav-content button{
-        display: none;
-    }
 
+header nav .nav-content #navlink {
+  position: fixed;
+  right: -26rem;
+}
+header nav .nav-content #navlink  div{
+    color : white;
+    text-transform: uppercase;
+}
+header nav .logo img {
+  max-width: 100%;
+  height: 100px;
+  position: fixed;
+  top: -40;
+  left: -55;
+
+}
+
+header nav .nav-content .fa {
+  font-size: 1.5rem;
+  margin-top: -0.5rem;
+  position: fixed;;
+  right: 35;
+  color : #ffffff
+}
+header .hero{
+    color : white;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top:50%;
+    left:50%;
+}
+header .hero h1{
+    font-size: 2.5rem;
+    font-family: 'Sansita Swashed', cursive;
+}
+header .hero span#name{
+    color : #625BA9;
+}
+header .hero span{
+    color : #F0135B;
+}
+@media (min-width: 992px) {
+  header nav {
+    grid-template-columns: auto 300px;
+    padding: 1rem;
+    
+  }
+  header nav .nav-content #navlink {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    position: static;
+    margin-top: 6%;
+  }
+  header nav .logo img {
+    top: -20;
+    left: -20;
+  }
+  header nav .nav-content .fa {
+    display: none;
+  }
+  header .hero h1{
+    font-size: 4rem;
+}
 }
