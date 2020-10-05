@@ -71,7 +71,7 @@ header .hero span {
   color: #f0135b;
 }
 
-section#about , section#services{
+section#about , section#services {
   margin-top: 4rem;
   padding: 0 0.5rem;
   display: grid;
@@ -90,6 +90,30 @@ section#about h1 {
 section#about hr {
   margin: 1.5rem 0;
   width: 200px;
+}
+section#services{
+  background-color: #e2e1f1;
+  text-align:center;
+}
+section#services img{
+  height:150px;
+}
+section#services .info{
+  margin-top: 1.5rem;
+}
+section#services .info p{
+  margin-top:0.5rem;
+}
+section#process{
+  display: grid;
+}
+section#process .processbg{
+  background-color: brown;
+  background: url("./images/front-view-pile-laundry_23-2148387001.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px;
 }
 @media (min-width: 992px) {
   header nav {
@@ -113,13 +137,22 @@ section#about hr {
   header .hero h1 {
     font-size: 4rem;
   }
-  section#about ,  section#services {
+  section#about ,  section#services{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
     justify-content: space-around;
     padding: 0 3rem;
   }
+  section#services {
+    padding:3rem 3rem;
+  }
+  section#services img{
+    height:200px;
+  }
   section#about .aboutText{
     margin-top: 3rem;
+  }
+  section#process {
+    grid-template-columns: auto 400px;
   }
 }
