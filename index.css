@@ -6,7 +6,7 @@
 body {
   font-family: "Assistant", sans-serif;
 }
-img{
+img {
   max-width: 100%;
 }
 header {
@@ -32,13 +32,18 @@ header nav {
 
 header nav .nav-content #navlink {
   position: fixed;
-  right: -26rem;
-  transition : 0.3s;
-  background-color: yellow;
+  right: -30rem;
+  top:0;
+  transition: 0.3s;
+  width: 50vw;
+  background-color: #625ba9;
+  padding: 1rem;
 }
 header nav .nav-content #navlink div {
   color: white;
   text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
 }
 header nav .logo img {
   max-width: 100%;
@@ -51,7 +56,7 @@ header nav .logo img {
 header nav .nav-content .fa {
   font-size: 1.5rem;
   margin-top: -0.5rem;
-  position: fixed;;
+  position: fixed;
   right: 30;
   color: #ffffff;
   cursor: pointer;
@@ -74,12 +79,14 @@ header .hero span {
   color: #f0135b;
 }
 
-section#about , section#services {
-  margin-top: 4rem;
-  padding: 0 0.5rem;
+section#about,
+section#services {
+  padding: 3rem 2rem;
   display: grid;
 }
-
+section#about {
+  background-color: #ecd6dd;
+}
 section#about img {
   margin-top: 0.9rem;
   max-width: 100%;
@@ -95,38 +102,37 @@ section#about hr {
   margin: 1.5rem 0;
   width: 200px;
 }
-section#services{
+section#services {
   background-color: #e2e1f1;
-  text-align:center;
-  padding:6rem 0;
+  text-align: center;
 }
-section#services img{
-  height:150px;
+section#services img {
+  height: 100px;
 }
-section#services .info{
+section#services .info {
   margin-top: 1.5rem;
 }
-section#services div{
+section#services div {
   margin-top: 1.5rem;
 }
-section#services .info p{
-  margin-top:0.5rem;
+section#services .info p {
+  margin-top: 0.5rem;
 }
-section#process{
+section#process {
   display: grid;
   text-align: center;
 }
-section#process .processbg{
+section#process .processbg {
   background-color: brown;
   background: url("./images/front-view-pile-laundry_23-2148387001.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 100px;
+  padding: 120px 0;
 }
 
 @media (min-width: 992px) {
-  header{
+  header {
     height: 100vh;
   }
   header nav {
@@ -137,33 +143,40 @@ section#process .processbg{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     position: static;
-    margin-top: 6%;
+    margin-top: 3%;
     margin-right: 30px;
     background-color: transparent;
+    width: 100%;
+    padding: 0;
+  }
+  header nav .nav-content #navlink div {
+    padding: 0;
   }
   header nav .logo img {
     top: -50;
     left: -20;
   }
-  header nav .nav-content .fa {
+  header nav .nav-content .fa,
+  header nav .nav-content #navlink div button {
     display: none;
   }
   header .hero h1 {
     font-size: 4rem;
   }
-  section#about ,  section#services{
+  section#about,
+  section#services {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
     justify-content: space-around;
     padding: 0 3rem;
   }
   section#services {
-    padding:10rem 3rem;
+    padding: 5rem 3rem;
   }
-  section#services img{
-    height:200px;
+  section#services img {
+    height: 200px;
   }
-  section#about .aboutText{
+  section#about .aboutText {
     margin-top: 3rem;
   }
   section#process {
