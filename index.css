@@ -201,7 +201,7 @@ footer p{
     top: -50;
     left: -20;
   }
-  header nav .nav-content .fa-bars,
+  header nav .nav-content .fa,
   header nav .nav-content #navlink div button {
     display: none;
   }
