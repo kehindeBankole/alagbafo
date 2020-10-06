@@ -13,12 +13,15 @@
       rel="stylesheet"
     />
     <script src="index.js" defer></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-      defer
-    ></script>
+
   </head>
   <body>
+    
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> 
+</div>
     <header>
       <nav>
         <div class="logo">
@@ -27,7 +30,7 @@
         <div class="nav-content">
           <i class="fa fa-bars" id="open"></i>
           <div id="navlink" class="navlist">
-            <div class="nav-item" id="close"><button>CLOSE</button></div>
+            <div class="nav-item" id="close"><i class="fa fa-window-close"></i></div>
             <div class="nav-item">home</div>
             <div class="nav-item">about</div>
             <div class="nav-item">services</div>
@@ -38,7 +41,7 @@
         <h1>welcome to <span id="name">Alagbafo-</span><span>NG</span></h1>
       </div>
     </header>
-    <section id="about">
+    <section id="about" class="box">
       <div class="aboutText">
         <h2>who we are?</h2>
         <h1>LAUNDRY AND DRY CLEANING SERVICES</h1>
@@ -50,7 +53,7 @@
       </div>
       <img src="images/undraw_eco_conscious_1y58.svg" />
     </section>
-    <section id="services">
+    <section id="services" class="box">
       <div class="first">
         <img src="images/undraw_deliveries_131a.svg" />
         <div class="info">
@@ -82,11 +85,11 @@
         </div>
       </div>
     </section>
-    <section id="process">
+    <section id="process" class="box">
       <img src="images/IMG-20201001-WA0044.jpg" alt="price Range image one" />
       <img src="images/IMG-20201001-WA0045.jpg" alt="price Range image two" />
     </section>
-    <footer>
+    <footer class="box">
       <div class="contact">
         <h1>contact</h1>
         <p>0903 861 5721</p>
@@ -110,4 +113,6 @@
       </div>
     </footer>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 </html>
