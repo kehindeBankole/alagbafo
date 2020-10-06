@@ -80,7 +80,7 @@ header .hero span {
 }
 
 section#about,
-section#services {
+section#services,footer {
   padding: 3rem 2rem;
   display: grid;
 }
@@ -90,6 +90,7 @@ section#about {
 section#about img {
   margin-top: 0.9rem;
   max-width: 100%;
+  height: 300px;
 }
 section#about h2 {
   color: #625ba9;
@@ -130,7 +131,13 @@ section#process .processbg {
   background-repeat: no-repeat;
   padding: 120px 0;
 }
-
+footer {
+  background-color: #625ba9;
+  color : #FFFFFF;
+}
+footer p{
+  padding: 0.5rem 0;
+}
 @media (min-width: 992px) {
   header {
     height: 100vh;
@@ -156,7 +163,7 @@ section#process .processbg {
     top: -50;
     left: -20;
   }
-  header nav .nav-content .fa,
+  header nav .nav-content .fa-bars,
   header nav .nav-content #navlink div button {
     display: none;
   }
@@ -164,11 +171,11 @@ section#process .processbg {
     font-size: 4rem;
   }
   section#about,
-  section#services {
+  section#services,footer {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
     justify-content: space-around;
-    padding: 0 3rem;
+    padding:  3rem;
   }
   section#services {
     padding: 5rem 3rem;
@@ -181,5 +188,8 @@ section#process .processbg {
   }
   section#process {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  footer .contact , footer .hours{
+    margin-left: 3rem;
   }
 }
