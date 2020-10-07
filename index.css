@@ -210,7 +210,7 @@ a{
     height: 100vh;
   }
   header nav {
-    grid-template-columns: auto 400px;
+    grid-template-columns: auto 600px;
     padding: 1.3rem;
   }
   header nav .nav-content #navlink {
