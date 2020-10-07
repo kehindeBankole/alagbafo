@@ -35,5 +35,3 @@ function scrollNav() {
 }
 scrollNav();
 
-
-lightGallery(document.getElementById('lightgallery'));

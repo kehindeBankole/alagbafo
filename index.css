@@ -177,11 +177,34 @@ footer p {
   background: #EC4A59;
   color: white;
 }
+#selector1{
+  display: grid;
+  grid-template-columns: 400px 400px;
+}
 a{
   text-decoration: none;
   color : white;
 }
+.images{
+  margin: 2rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  justify-content: space-around;
+  grid-gap:0;
+}
+.images img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  filter: grayscale(60%);
+  transition: 0.4s ease;
+}
 
+.images img:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
+  opacity: 1;
+}
 @media (min-width: 768px) {
   header {
     height: 100vh;
@@ -237,5 +260,16 @@ a{
   footer .contact,
   footer .hours {
     margin-left: 3rem;
+  }
+  .images{
+    margin: 2rem 10rem;
+    grid-template-columns: repeat(3 , 1fr);
+
+  }
+  .images img {
+
+    filter: grayscale(30%);
+     opacity: 0.5;
+
   }
 }
