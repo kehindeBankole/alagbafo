@@ -9,8 +9,9 @@ body {
 img {
   max-width: 100%;
 }
+
 header {
-  height: 75vh;
+  height: 65vh;
   background-color: brown;
   background: url("./images/pexels-ekaterina-belinskaya-4700613.jpg");
   background-position: center;
@@ -33,7 +34,7 @@ header nav {
 header nav .nav-content #navlink {
   position: fixed;
   right: -30rem;
-  top:0;
+  top: 0;
   transition: 0.3s;
   width: 50vw;
   background-color: #625ba9;
@@ -80,7 +81,8 @@ header .hero span {
 }
 
 section#about,
-section#services,footer {
+section#services,
+footer {
   padding: 3rem 2rem;
   display: grid;
 }
@@ -133,10 +135,10 @@ section#process .processbg {
 }
 footer {
   background-color: #625ba9;
-  color : #FFFFFF;
+  color: #ffffff;
   text-transform: capitalize;
 }
-footer p{
+footer p {
   padding: 0.5rem 0;
 }
 
@@ -160,23 +162,27 @@ footer p{
 
 .icon-bar a:hover {
   background-color: #000;
-
 }
 .facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
 .twitter {
-  background: #55ACEE;
+  background: #00E676;
   color: white;
 }
 
 .instagram {
-  background: #dd4b39;
+  background: #EC4A59;
   color: white;
 }
-@media (min-width: 992px) {
+a{
+  text-decoration: none;
+  color : white;
+}
+
+@media (min-width: 768px) {
   header {
     height: 100vh;
   }
@@ -209,11 +215,12 @@ footer p{
     font-size: 4rem;
   }
   section#about,
-  section#services,footer {
+  section#services,
+  footer {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
     justify-content: space-around;
-    padding:  3rem;
+    padding: 3rem;
   }
   section#services {
     padding: 5rem 3rem;
@@ -227,7 +234,8 @@ footer p{
   section#process {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  footer .contact , footer .hours{
+  footer .contact,
+  footer .hours {
     margin-left: 3rem;
   }
 }
