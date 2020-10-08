@@ -195,7 +195,8 @@ a{
 .images img {
   position: relative;
   width: 100%;
-  height: auto;
+  
+  height:400px;
   filter: grayscale(60%);
   transition: 0.4s ease;
 }
