@@ -188,7 +188,7 @@ a{
 .images{
   margin: 2rem 5rem;
   display: grid;
-  grid-template-columns: repeat(2 , 1fr);
+  /* grid-template-columns: repeat(2 , 1fr); */
   justify-content: space-around;
   grid-gap:0;
 }
